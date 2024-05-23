@@ -27,7 +27,7 @@ Coming Soon!
 
 # Screenshots
 
-Sceenshots showing my home lab enviornment can be found here.
+Sceenshots showing my home lab enviornment can be found [here](https://github.com/Bryan-LJX/homelab/tree/main/homelab.screenshots.assets).
 
 # Future 
 Coming Soon!
