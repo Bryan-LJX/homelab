@@ -5,7 +5,6 @@ I built this homelab for a few reasons. First off, it's like a giant playground 
 # Overview Diagram
 The diagram below summarizes my Home Lab environment
 
-<img src="README.assets/HomeLab_Diagram.png" alt="HomeLab_Diagram" style="zoom:75%;" />
 
 # Hardware
 
