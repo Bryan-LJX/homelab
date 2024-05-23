@@ -1,4 +1,5 @@
-# HomeLab Host Shutdown Script
+# A simple ESXi Host shutdown script which I use to power down my home lab. 
+# Credentials for each host have been saved beforehand in the PowerCLI credential store via the New-VICredentialStoreItem cmdlet
 
 # shutdown host lab-esxi01
 "Connecting to lab-esxi01..."
