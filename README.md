@@ -23,6 +23,8 @@ Below are the details of the hardware BOM I used in my home lab:
 
 Servers:
 
+<img src="README.assets/HP.Elite.Desk.png" alt="HP" style="zoom:75%;" />
+
 Model: HP EliteDesk 800 35W G2 ([vendor](https://support.hp.com/us-en/product/product-specs/hp-elitedesk-800-35w-g2-desktop-mini-pc/7633266))
 
 Processor      : 1 x Intel(R) Core(TM) i5-6500T CPU @ 2.50GHz Processor
@@ -37,7 +39,7 @@ Ports          : 1 x 2 USB 3.0 (Front), 1 x 4 USB 3.0 (Back)
 
 Graphics       : 1 x Intel HD Graphics 520
 
-
+<img src="README.assets/Lenovo.M900.new.png" alt="Lenovo" style="zoom:75%;" />
 
 Model          : Lenovo ThinkCentre M900 Tiny ([vendor](https://www.lenovo.com/gb/en/p/desktops/thinkcentre/m-series-tiny/m900-tiny/11tc1mtm900?orgRef=https%253A%252F%252Fwww.google.com%252F))
 
@@ -54,7 +56,7 @@ Ports          : 1 x 2 USB 3.0 (Front), 1 x 4 USB 3.0 (Back)
 Graphics       : 1 x Intel HD Graphics 520
 
 
-
+<img src="README.assets/Dell.Precision.Tower.7810.png" alt="Dell" style="zoom:75%;" />
 
 
 Model          : Dell Precision Tower 7810 ([vendor](https://www.dell.com/en-sg/shop/pcs-desktop-computers/dell-precision-tower-7810-workstation/spd/precision-t7810-workstation))
