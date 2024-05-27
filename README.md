@@ -76,7 +76,7 @@ Graphics       : 1 x NVIDIA Quadro M4000
 
 ---
 #### **NOTES:
-- For the HP & Lenovo Mini Workstations, I found that their AGI NVMe SSDs could not be recognized by ESXi 7. Upon researching this issue on the web, I discovered that with the update to ESXi 7, there is an issue relating to the NVMe 1.3 spec not conforming to the latest specification and hence the driver is unable to claim the device. Thankfully there is a workaround to resolve the issue which is to replace the NVMe driver from ESXi 7.0 with one found in ESXi 6.5 Update 2. For more details refer to this [page](https://williamlam.com/2019/05/quick-tip-crucial-nvme-ssd-not-recognized-by-esxi-6-7.html).
+- For the HP & Lenovo Mini Workstations, I found that their AGI NVMe SSDs could not be recognized by the ESXi 7 installer. Upon researching this issue on the web, I discovered that with the update to ESXi 7, there is an issue relating to the NVMe 1.3 spec not conforming to the latest specification and hence the driver is unable to claim the device. Thankfully there is a workaround to resolve the issue which is to replace the NVMe driver from ESXi 7.0 with one found in ESXi 6.5 Update 2. For more details refer to this [page](https://williamlam.com/2019/05/quick-tip-crucial-nvme-ssd-not-recognized-by-esxi-6-7.html).
 - As the workstations came with only a single RJ45 1Gbps LOM port, I decided to add a second USB 1Gbps Network Adapter to each of them (mainly due to reasons relating to NSX). In order for these USB adapters to be recognized by ESXi, I installed the [USB Native Driver Fling](https://www.virten.net/2020/09/tips-for-using-usb-network-adapters-with-vmware-esxi/) from the VMware community.
 
 ---
