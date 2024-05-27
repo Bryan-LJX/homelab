@@ -102,7 +102,7 @@ Below are the details of the software BOM I used in my home lab:
 
 - VMware ESXi 7.0 update 3g (build 20328353), & 7.0 update 3o (build 22348816)
 - VMware vCenter Server 7.0 Update 3o (build 22357613)
-- VMware NSX-T NSX-T Data Center 3.2.3 (build 21703624)
+- VMware NSX-T Data Center 3.2.3 (build 21703624)
 - VMware Aria Operations 8.12.0 (build 21594884)
 - Synology DSM 7.2-64570 Update 3
 
