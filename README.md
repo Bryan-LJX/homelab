@@ -113,7 +113,8 @@ Sceenshots showing my home lab environment can be found [here](https://github.co
 # Future 
 ### On Lab:
 - To standardize ESXi versions across all hosts (not urgent as the Dell host on higher version is on separate cluster).
-- Utilize more automation tools like Terraform, Ansible & PowerCLI to automate common & repetitive activities (eg. Deploy/configure VMs, Scale up/down, Power management etc.) 
+- Upgrade vSphere, NSX & Aria to the latest versions.
+- Utilize more automation tools like Terraform, Ansible & PowerCLI to automate common & repetitive activities (eg. Deploy/configure VMs, Scale up/down, Power management etc.). 
 ### On GitHub:
 - Write-up on network and VLAN configurations.
 - Write-up on Nested VCF deployment.
