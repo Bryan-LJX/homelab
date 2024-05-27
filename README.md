@@ -21,7 +21,7 @@ Currently, I connect to my lab environment through my home network (192.168.1.0/
 
 Below are the details of the hardware BOM I used in my home lab:
 
-Servers:
+### Servers:
 
 <img src="README.assets/HP.Elite.Desk.png" alt="HP" style="zoom:75%;" />
 
@@ -39,6 +39,7 @@ Ports          : 1 x 2 USB 3.0 (Front), 1 x 4 USB 3.0 (Back)
 
 Graphics       : 1 x Intel HD Graphics 520
 
+---
 <img src="README.assets/Lenovo.M900.new.png" alt="Lenovo" style="zoom:75%;" />
 
 Model          : Lenovo ThinkCentre M900 Tiny ([vendor](https://www.lenovo.com/gb/en/p/desktops/thinkcentre/m-series-tiny/m900-tiny/11tc1mtm900?orgRef=https%253A%252F%252Fwww.google.com%252F))
@@ -55,7 +56,7 @@ Ports          : 1 x 2 USB 3.0 (Front), 1 x 4 USB 3.0 (Back)
 
 Graphics       : 1 x Intel HD Graphics 520
 
-
+---
 <img src="README.assets/Dell.Precision.Tower.7810.png" alt="Dell" style="zoom:75%;" />
 
 
@@ -73,13 +74,47 @@ Ports          : 1 x 1 USB 3.0, 1 x 3USB 2.0 (Front), 1 x 3 USB 2.0, 1 x 3 USB 3
 
 Graphics       : 1 x NVIDIA Quadro M4000
 
+---
+#### **NOTES:
+- For the HP & Lenovo Mini Workstations, I found that their AGI NVMe SSDs could not be recognized by ESXi 7. Upon researching this issue on the web, I discovered that with the update to ESXi 7, there is an issue relating to the NVMe 1.3 spec not conforming to the latest specification and hence the driver is unable to claim the device. Thankfully there is a workaround to resolve the issue which is to replace the NVMe driver from ESXi 7.0 with one found in ESXi 6.5 Update 2. For more details refer to this [page](https://williamlam.com/2019/05/quick-tip-crucial-nvme-ssd-not-recognized-by-esxi-6-7.html).
+- As the workstations came with only a single RJ45 1Gbps LOM port, I decided to add a second USB 1Gbps Network Adapter to each of them (mainly due to reasons relating to NSX). In order for these USB adapters to be recognized by ESXi, I installed the [USB Native Driver Fling](https://www.virten.net/2020/09/tips-for-using-usb-network-adapters-with-vmware-esxi/) from the VMware community.
+
+---
+### Switch:
+
+<img src="README.assets/TLSG116E.tplink.png" alt="Tplink" style="zoom:75%;" />
+
+Model: TL-SG116E 16-Port Gigabit Easy Smart Switch ([vendor](https://www.tp-link.com/sg/business-networking/easy-smart-switch/tl-sg116e/))
+
+---
+### Storage:
+
+<img src="README.assets/DS124.synology.png" alt="synology" style="zoom:5%;" />
+
+Model: Synology NAS DS124 ([vendor](https://www.synology.com/en-us/products/DS124))
+
+Disk:  Western Digital 8TB WD Red Plus NAS Internal Hard Drive HDD WD80EFZZ ([vendor](https://www.westerndigital.com/en-sg/products/internal-drives/wd-red-plus-sata-3-5-hdd?sku=WD80EFZZ))
+
+
 # Software
 
-Coming Soon!
+Below are the details of the software BOM I used in my home lab:
+
+- VMware ESXi 7.0 update 3g (build 20328353), & 7.0 update 3o (build 22348816)
+- VMware vCenter Server 7.0 Update 3o (build 22357613)
+- VMware NSX-T NSX-T Data Center 3.2.3 (build 21703624)
+- VMware Aria Operations 8.12.0 (build 21594884)
+- Synology DSM 7.2-64570 Update 3
 
 # Screenshots
 
 Sceenshots showing my home lab environment can be found [here](https://github.com/Bryan-LJX/homelab/tree/main/homelab.screenshots.assets).
 
 # Future 
-Coming Soon!
+### On Lab:
+- To standardize ESXi versions across all hosts (not urgent as the Dell host on higher version is on separate cluster).
+- Utilize more automation tools like Terraform, Ansible & PowerCLI to automate common & repetitive activities (eg. Deploy/configure VMs, Scale up/down, Power management etc.) 
+### On GitHub:
+- Write-up on network and VLAN configurations.
+- Write-up on Nested VCF deployment.
+- Configuration files of some of the esssential services (eg. BIND DNS Server, OpenVPN Server, pfSense Virtual Router etc.)
