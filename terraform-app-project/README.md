@@ -44,7 +44,8 @@ Destroy - This command destroys the deployed resources. It is similar to terrafo
 
 # Future
 
-- Add `output.tf` file providing useful information for troubleshooting purposes.
+- Add an `output.tf` file to provide useful information for troubleshooting purposes.
+- Combine this project with an Ansible palybook to install the applications in the VMs.
 
 # Resources
 
