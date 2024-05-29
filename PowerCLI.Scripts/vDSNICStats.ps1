@@ -1,3 +1,5 @@
+#Script that collects the CRC errors, Rx & Tx packets dropped of the selected vDS 
+
 Write-Host -backgroundcolor Magenta "`t--- NIC Status Script ---"
 $vCenterServer = Read-Host "`nEnter the vCenter Server to connect"
 Write-Host "Connecting to vCenter Server - $vCenterServer"
